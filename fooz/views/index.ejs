@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.knob.js"></script>
+    <script type="text/javascript" src="javascripts/fooz.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+    
+  </head>
+  <body>
+	    <input type="text" class="dial" data-min="0" data-max="360" data-cursor=true data-thickness=".3" data-width="100">
+
+	    <div class="kick-button">KICK!</div>
+
+	    <p class="start-game">Start/Reset Game</p>
+
+	    <div class="table">
+	    	<div class="penalty-box top"></div>
+	    	<div class="half-way"></div>
+	    	<div class="centre-circle"></div>
+	    	<div class="penalty-box bottom"></div>
+	    	<div class="rod red-defence">
+	    		<div class="fooz-man-container defence">
+		    		<div class="fooz-man two left">
+		    			<div class="fooz-body"></div>
+		    			<div class="fooz-feet"></div>
+		    		</div>
+		    		<div class="fooz-man two right">
+		    			<div class="fooz-body"></div>
+		    			<div class="fooz-feet"></div>
+		    		</div>
+		    	</div>
+	    	</div>
+	    	<div class="rod red-goal">
+	    		<div class="fooz-man-container goal">
+		    		<div class="fooz-man">
+		    			<div class="fooz-body"></div>
+		    			<div class="fooz-feet"></div>
+		    		</div>
+		    	</div>
+	    	</div>
+	    </div>
+
+  </body>
+</html>
